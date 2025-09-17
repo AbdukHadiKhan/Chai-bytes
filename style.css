@@ -165,13 +165,30 @@ footer {
   margin-top: 2rem;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .navbar ul {
+    display: none;
     flex-direction: column;
     align-items: center;
+    background: brown;
+    width: 100%;
   }
 
-  .navbar li {
-    margin: 10px 0;
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-right: 20px;
   }
 }
